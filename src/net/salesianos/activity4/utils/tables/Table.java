@@ -29,6 +29,6 @@ public class Table implements Serializable{
 
     @Override
     public String toString() {
-        return "\nColor: " + this.color + "\nNúmero de patas: " + this.feetNum + "\n";
+        return "\nColor: " + this.color + "\nNúmero de patas: " + this.feetNum;
     }
 }
