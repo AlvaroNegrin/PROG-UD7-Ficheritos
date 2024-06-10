@@ -1,13 +1,13 @@
 package net.salesianos.activity4.utils.menu;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import net.salesianos.activity4.utils.manager.DataManagement;
-import net.salesianos.activity4.utils.manager.TableManagement;
 import net.salesianos.activity4.utils.tables.Table;
 
 public class Menu {
-    private static TableManagement<Table> tables = new TableManagement<>();
+    private static ArrayList<Table> tables = new ArrayList<>();
     private static boolean isKeepAsking;
     private final static Scanner SC = new Scanner(System.in);
     
