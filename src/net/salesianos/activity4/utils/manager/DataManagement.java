@@ -9,11 +9,12 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
+import java.util.ArrayList;
 
 import net.salesianos.activity4.utils.tables.Table;
 
 public class DataManagement {
-    public static void keepTableOnFile(TableManagement<Table> tables) {
+    public static void keepTableOnFile(ArrayList<Table> tables) {
         String fileRoute = "src/net/salesianos/files/hybrid/activity4.txt";
         try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new BufferedOutputStream(new FileOutputStream(fileRoute)))) {
 
@@ -31,10 +32,10 @@ public class DataManagement {
     public static void getKeepedTablesFromFile() {
         String fileRoute = "src/net/salesianos/files/hybrid/activity4.txt";
         try (ObjectInputStream objectInputStream = new ObjectInputStream( new BufferedInputStream(new FileInputStream(fileRoute)))) {
-            TableManagement<Table> tableList;
+            ArrayList<Table> tableList = new ArrayList<>();
             while (true) {
-                tableList = (TableManagement<Table>) objectInputStream.readObject();
-                System.out.println(tableList.toString());
+                tableList = (ArrayList<Table>) objectInputStream.readObject();
+                System.out.println(tableList);
             }
         } catch (EOFException e) {
             System.out.println("Fin del arcivho");
