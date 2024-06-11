@@ -1,6 +1,7 @@
 package net.salesianos.activity1;
 
-import java.io.FileOutputStream;
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
@@ -19,9 +20,10 @@ public class Main {
 
         userText = userText.toUpperCase().replaceAll(" ", "_");
 
-        try (FileOutputStream fileOutputStream = new FileOutputStream("src/net/salesianos/files/input/savetext.txt")) {
+        try (BufferedWriter bufferedWriter = new BufferedWriter(
+                new FileWriter("src/net/salesianos/files/input/savetext.txt"))) {
 
-            fileOutputStream.write(userText.getBytes());
+            bufferedWriter.write(userText);
 
             System.out.println("Escrito con exito");
         } catch (IOException e) {
