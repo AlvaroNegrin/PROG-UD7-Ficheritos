@@ -8,9 +8,9 @@ import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        final String FILE_DESTINY = "src/net/salesianos/files/input/activity3.txt";
-        final String FILE_ROUTE1 = "src/net/salesianos/files/input/savetext.txt";
-        final String FILE_ROUTE2 = "src/net/salesianos/files/output/activity2.txt";
+        final String FILE_DESTINY = "src/net/salesianos/activities/files/input/activity3.txt";
+        final String FILE_ROUTE1 = "src/net/salesianos/activities/files/input/savetext.txt";
+        final String FILE_ROUTE2 = "src/net/salesianos/activities/files/output/activity2.txt";
 
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(FILE_DESTINY));
                 BufferedReader bufferedReader1 = new BufferedReader(new FileReader(FILE_ROUTE1));

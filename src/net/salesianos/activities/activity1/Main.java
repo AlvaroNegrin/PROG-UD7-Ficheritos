@@ -21,7 +21,7 @@ public class Main {
         userText = userText.toUpperCase().replaceAll(" ", "_");
 
         try (BufferedWriter bufferedWriter = new BufferedWriter(
-                new FileWriter("src/net/salesianos/files/input/savetext.txt"))) {
+                new FileWriter("src/net/salesianos/activities/activity1/texto.txt"))) {
 
             bufferedWriter.write(userText);
 
