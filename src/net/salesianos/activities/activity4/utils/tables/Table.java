@@ -1,4 +1,4 @@
-package net.salesianos.activity4.utils.tables;
+package net.salesianos.activities.activity4.utils.tables;
 
 import java.io.Serializable;
 

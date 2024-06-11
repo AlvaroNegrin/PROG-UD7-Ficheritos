@@ -1,4 +1,4 @@
-package net.salesianos.activity3;
+package net.salesianos.activities.activity3;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

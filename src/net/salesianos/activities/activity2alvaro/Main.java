@@ -1,4 +1,4 @@
-package net.salesianos.activity2alvaro;
+package net.salesianos.activities.activity2alvaro;
 
 import java.io.BufferedReader;
 import java.io.FileReader;

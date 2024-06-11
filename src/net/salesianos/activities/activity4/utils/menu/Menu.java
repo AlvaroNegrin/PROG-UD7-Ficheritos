@@ -1,10 +1,10 @@
-package net.salesianos.activity4.utils.menu;
+package net.salesianos.activities.activity4.utils.menu;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import net.salesianos.activity4.utils.manager.DataManagement;
-import net.salesianos.activity4.utils.tables.Table;
+import net.salesianos.activities.activity4.utils.manager.DataManagement;
+import net.salesianos.activities.activity4.utils.tables.Table;
 
 public class Menu {
     private static ArrayList<Table> tables = new ArrayList<>();

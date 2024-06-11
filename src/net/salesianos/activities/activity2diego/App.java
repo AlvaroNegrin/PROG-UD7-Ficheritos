@@ -1,4 +1,4 @@
-package net.salesianos.activity2diego;
+package net.salesianos.activities.activity2diego;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

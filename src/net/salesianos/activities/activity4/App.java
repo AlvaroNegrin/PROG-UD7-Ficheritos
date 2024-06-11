@@ -1,6 +1,6 @@
-package net.salesianos.activity4;
+package net.salesianos.activities.activity4;
 
-import net.salesianos.activity4.utils.menu.Menu;
+import net.salesianos.activities.activity4.utils.menu.Menu;
 
 public class App {
     public static void main(String[] args) {
