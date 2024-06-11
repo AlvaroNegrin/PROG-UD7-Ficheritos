@@ -19,7 +19,7 @@ public class Menu {
         return isKeepAsking;
     }
 
-    private static void menu() {
+    public static void showMainMenu() {
         String menu = """
                 \n*-----------------------------------------*
                 |             Mesas latinas               |
@@ -32,10 +32,9 @@ public class Menu {
         System.out.println(menu);
     }
 
-    public static void showMenu() {
+    public static void userSelection() {
         String tableColor;
         int tableFeet;
-        menu();
         String userText = SC.nextLine();
         switch (userText) {
             case "1":
