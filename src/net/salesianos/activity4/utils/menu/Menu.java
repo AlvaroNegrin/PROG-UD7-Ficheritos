@@ -10,11 +10,11 @@ public class Menu {
     private static ArrayList<Table> tables = new ArrayList<>();
     private static boolean isKeepAsking;
     private final static Scanner SC = new Scanner(System.in);
-    
+
     public static void setKeepAsking(boolean keepAsking) {
         isKeepAsking = keepAsking;
     }
-    
+
     public static boolean isKeepAsking() {
         return isKeepAsking;
     }
@@ -45,15 +45,15 @@ public class Menu {
                 tableFeet = SC.nextInt();
                 SC.nextLine();
                 tables.add(new Table(tableColor, tableFeet));
-                DataManagement.keepTableOnFile(tables);
+                DataManagement.saveTableOnFile(tables);
                 break;
             case "2":
-                DataManagement.getKeepedTablesFromFile();
+                DataManagement.getTablesFromFile();
                 break;
             case "3":
                 setKeepAsking(false);
                 break;
-        
+
             default:
                 System.out.println("Opción no válida");
                 break;
