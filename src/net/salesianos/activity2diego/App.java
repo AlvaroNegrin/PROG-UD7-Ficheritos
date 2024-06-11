@@ -1,4 +1,5 @@
-package net.salesianos.activity2;
+package net.salesianos.activity2diego;
+
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
@@ -16,7 +17,7 @@ public class App {
 
                 textContent = asciLetters + "_" + (int) asciLetters + ", ";
                 System.out.print(textContent);
-                
+
                 asciLetters = (char) bufferReader.read();
             }
         } catch (FileNotFoundException e) {
@@ -26,4 +27,3 @@ public class App {
         }
     }
 }
-
