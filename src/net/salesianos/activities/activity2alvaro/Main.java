@@ -1,4 +1,4 @@
-package net.salesianos.activity2alvaro;
+package net.salesianos.activities.activity2alvaro;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -8,7 +8,7 @@ public class Main {
     public static void main(String[] args) {
 
         try (BufferedReader lector = new BufferedReader(
-                new FileReader("src/net/salesianos/files/output/activity2.txt"))) {
+                new FileReader("src/net/salesianos/activities/activity2alvaro/texto.txt"))) {
             String linea;
             while ((linea = lector.readLine()) != null) {
                 for (char caracter : linea.toCharArray()) {

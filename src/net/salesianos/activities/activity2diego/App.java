@@ -1,4 +1,4 @@
-package net.salesianos.activity2diego;
+package net.salesianos.activities.activity2diego;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;
@@ -8,7 +8,7 @@ import java.io.IOException;
 public class App {
     public static void main(String[] args) {
 
-        String fileRoute = "src/net/salesianos/files/output/activity2.txt";
+        String fileRoute = "src/net/salesianos/activities/files/output/activity2.txt";
 
         try (BufferedReader bufferReader = new BufferedReader(new FileReader(fileRoute))) {
             String textContent = "";

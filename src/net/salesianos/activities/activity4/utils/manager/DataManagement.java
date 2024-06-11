@@ -1,4 +1,4 @@
-package net.salesianos.activity4.utils.manager;
+package net.salesianos.activities.activity4.utils.manager;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
@@ -11,10 +11,10 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 import java.util.ArrayList;
 
-import net.salesianos.activity4.utils.tables.Table;
+import net.salesianos.activities.activity4.utils.tables.Table;
 
 public class DataManagement {
-    private final static String FILE_ROUTE = "src/net/salesianos/files/hybrid/activity4.txt";
+    private final static String FILE_ROUTE = "src/net/salesianos/activities/files/hybrid/activity4.txt";
 
     public static void saveTableOnFile(ArrayList<Table> tables) {
         try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(
