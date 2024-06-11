@@ -21,6 +21,8 @@ public class Main {
             bufferedWriter.newLine();
             line = bufferedReader2.readLine();
             bufferedWriter.write(line);
+            bufferedWriter.newLine();
+            bufferedWriter.write("Fichero creado por Alvaro y Diego Ochoa");
 
             System.out.println("Contenido escrito en el archivo.");
         } catch (IOException e) {
