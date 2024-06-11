@@ -6,7 +6,8 @@ public class App {
     public static void main(String[] args) {
         Menu.setKeepAsking(true);
         while (Menu.isKeepAsking()) {
-            Menu.showMenu();
+            Menu.showMainMenu();
+            Menu.userSelection();
         }
         
     }
